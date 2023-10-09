@@ -1,4 +1,5 @@
 /* Variables */
+    const title = document.getElementById("title")
     const btn = document.getElementById("injector")
     const btn2 = document.getElementById("continue")
     const box = document.getElementById("textbox")
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 injector.addEventListener("click", function() {
     var cf = confirm('[ ATTENTION ]\nThis Is Meant For Securly Only\nIf You Dont Have Securly, Press Cancel Now!');
     if (cf === true){
+        title.innerHTML = "Curly";
         btn.style.display = "none";
         console.log('You Confirmed To Continue!');
         console.log("If You Need To, Save Whatever Is Currently On Your Clipboard, As It Will Be Overwritten");
